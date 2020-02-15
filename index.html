@@ -44,28 +44,6 @@
     var root = '';
 </script>
 
-<script type="text/javascript">
-    var conn, reloadTimer, connectTimer;
-    var connect = function() {
-        conn = new WebSocket('ws://' + location.host + '/live');
-        conn.onmessage = function(event) {
-            if (event.data === 'change') {
-                if (reloadTimer) clearTimeout(reloadTimer);
-                reloadTimer = setTimeout(function() {
-                    window.location.reload();
-                }, 200);
-            }
-        };
-        conn.onclose = function() {
-            if (connectTimer) clearTimeout(connectTimer);
-            connectTimer = setTimeout(function() {
-                connect();
-            }, 1000);
-        };
-    };
-    connect();
-</script>
-
 
         <meta name="keywords" content="构建只为纯粹书写的博客">
         <meta name="description" content="构建只为纯粹书写的博客">
@@ -99,6 +77,22 @@
                     
                 </header>
                 <ul class="article-list">
+                    
+                    <li class="article">
+                        <a class="title" href="/%e8%bf%99%e6%98%af%e4%b8%80%e4%b8%aa%e6%b5%8b%e8%af%95%e6%96%87%e7%ab%a0.html">测试文章</a>
+                        <div class="cover" style="background-image:url(/images/example-en.png);"></div>
+                        
+                        <section class="info">
+                            <span class="avatar" style="background-image: url(/images/avatar.png);"></span>
+                            <a class="name" href="/about.me.html">纸小墨</a>
+                            
+                            <span class="date" data-time="1581728400"><span class="from"></span></span>
+                            
+                            <span class="tags">
+                            <a class="tag" href="/tag/%e6%96%87%e7%ab%a0/index.html">文章</a><a class="tag" href="/tag/%e6%b5%8b%e8%af%95/index.html">测试</a>
+                            </span>
+                        </section>
+                    </li>
                     
                     <li class="article">
                         <a class="title" href="/ink-blog-tool.html">简洁的静态博客构建工具 —— 纸小墨（InkPaper）</a>

@@ -45,9 +45,10 @@
 </script>
 
 
-        <meta name="keywords" content="构建只为纯粹书写的博客">
-        <meta name="description" content="构建只为纯粹书写的博客">
-        <title>纸小墨官方博客</title>
+        <meta name="keywords" content="文章,测试,">
+        <meta name="description" content="测试文章">
+        <meta name="author" content="纸小墨">
+        <title>测试文章</title>
     </head>
     <body>
         <article class="container">
@@ -63,34 +64,42 @@
   </ul>
 </header>
 
-            <article class="main tag">
-                <header class="site">
-                    <h1 class="title">纸小墨官方博客</h1>
-                    <h2 class="subtitle">构建只为纯粹书写的博客</h2>
-                </header>
-                <header class="header">
-                    <span class="title">标签 -</span>
-                    <span class="subtitle">3 篇文章</span>
-                </header>
-                <ul class="tag-list clearfix">
+            <article class="main article">
+                <h1 class="title">测试文章</h1>
+                <section class="info">
+                    <span class="avatar" style="background-image: url(/images/avatar.png);"></span>
+                    <a class="name" href="/about.me.html">纸小墨</a>
                     
-                    <li class="tag-item">
-                        <a class="tag-name" href="/tag/%e8%ae%be%e8%ae%a1/index.html">设计<span class="tag-count"> (2)</span></a>
-                    </li>
+                    <span class="date" data-time="1581728400"><span class="from"></span></span>
                     
-                    <li class="tag-item">
-                        <a class="tag-name" href="/tag/%e5%86%99%e4%bd%9c/index.html">写作<span class="tag-count"> (2)</span></a>
-                    </li>
+                    <span class="tags"><a class="tag" href="/tag/%e6%96%87%e7%ab%a0/index.html">文章</a><a class="tag" href="/tag/%e6%b5%8b%e8%af%95/index.html">测试</a></span>
+                </section>
+                <article class="content"></article>
+                <section class="author">
+                    <div class="avatar" style="background-image: url(/images/avatar.png);"></div>
+                    <a class="name" href="/about.me.html">纸小墨</a>
+                    <div class="intro">构建只为纯粹书写的博客</div>
+                </section>
+                <section class="recommend">
                     
-                    <li class="tag-item">
-                        <a class="tag-name" href="/tag/%e6%b5%8b%e8%af%95/index.html">测试<span class="tag-count"> (1)</span></a>
-                    </li>
                     
-                    <li class="tag-item">
-                        <a class="tag-name" href="/tag/%e6%96%87%e7%ab%a0/index.html">文章<span class="tag-count"> (1)</span></a>
-                    </li>
+                    <section class="nav next">
+                        <div class="head">下篇文章</div>
+                        <a class="link" href="/ink-blog-tool.html">简洁的静态博客构建工具 —— 纸小墨（InkPaper）</a>
+                    </section>
                     
-                </ul>
+                </section>
+                
+    <section id="disqus_thread"></section>
+    <script type="text/javascript">
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//username.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+
+
             </article>
         </article>
         <footer class="footer">
@@ -103,6 +112,6 @@
     <span class="publish">Powered by <a href="http://www.chole.io/" target="_blank">Ink</a></span>
 </footer>
 
+        <script src="/bundle/index.js"></script>
     </body>
-    <script src="/bundle/index.js"></script>
 </html>
